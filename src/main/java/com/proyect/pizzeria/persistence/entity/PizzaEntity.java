@@ -1,12 +1,12 @@
-package com.proyect.pizzeria.controller.entity;
+package com.proyect.pizzeria.persistence.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
-@Builder
+//@Builder
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "pizza")
@@ -25,13 +25,13 @@ public class PizzaEntity {
     @Column(nullable = false, columnDefinition = "Decimal(5,2)")
     private Double price;
 
-    @Column(columnDefinition = "smallint")
+    @Column(columnDefinition = "boolean")
     private Boolean vegetarian;
 
-    @Column(columnDefinition = "smallint")
+    @Column(columnDefinition = "boolean")
     private Boolean vegan;
 
-    @Column(columnDefinition = "smallint", nullable = false)
+    @Column(columnDefinition = "boolean", nullable = false)
     private Boolean available;
 }
 

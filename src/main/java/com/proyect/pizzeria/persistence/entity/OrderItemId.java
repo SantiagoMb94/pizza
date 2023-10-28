@@ -1,12 +1,12 @@
-package com.proyect.pizzeria.controller.entity;
+package com.proyect.pizzeria.persistence.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Objects;
 
-@Builder
+//@Builder
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderItemId {
